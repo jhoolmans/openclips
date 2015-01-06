@@ -1,14 +1,14 @@
-== VFX Clips
+## VFX Clips
 
 VFXClips is used and maintained by [The Ambassadors](http://www.theambassadors.nl/).
 
 Authors: Jeroen Hoolmans <jeroen.hoolmans@theambassadors.nl>
 
-== Usage
+## Usage
 
   exampleCode
 
-== Contribution
+## Contribution
 
 - Wiki
 - Issues etc
