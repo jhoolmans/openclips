@@ -1,6 +1,6 @@
-## VFX Clips
+## Open Clips
 
-VFXClips is used and maintained by [The Ambassadors](http://www.theambassadors.nl/).
+OpenClips is used and maintained by [The Ambassadors](http://www.theambassadors.nl/).
 
 Authors: Jeroen Hoolmans <jeroen.hoolmans@theambassadors.nl>
 
