@@ -13,3 +13,7 @@ class AMClipTest(unittest.TestCase):
         self.assertEqual("TestClip", clip.name)
 
         clip.close()
+
+        self.assertTrue(False)
+    # end test_read_clip
+# end AMClipTest
