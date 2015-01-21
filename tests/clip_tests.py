@@ -1,9 +1,9 @@
-from vfxclips import vfxclips as am # am stands for Ambassadors
+from ambassadors.openclips import openclips as am  # am stands for Ambassadors
 
 import unittest
 
-class AMClipTest(unittest.TestCase):
 
+class AMClipTest(unittest.TestCase):
     def test_read_clip(self):
         # self.assertEqual(4,4)
         # Instanciate a Clip instance
@@ -13,3 +13,7 @@ class AMClipTest(unittest.TestCase):
         self.assertEqual("TestClip", clip.name)
 
         clip.close()
+
+        self.assertTrue(False)
+    # end test_read_clip
+# end AMClipTest
