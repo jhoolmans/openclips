@@ -1,4 +1,4 @@
-from vfxclips import vfxclips as am # am stands for Ambassadors
+from ambassadors.openclips import openclips as am # am stands for Ambassadors
 
 import unittest
 
