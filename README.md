@@ -11,6 +11,7 @@ Authors: Jeroen Hoolmans <jeroen.hoolmans@theambassadors.nl>
 ## Running Tests
 
 Right now the code runs on both Python 2 and Python 3.
+*Note* you don't need to install the package to run the tests. setup.py handles it for you.
 
 ```python setup.py test``` 
 
@@ -39,6 +40,10 @@ Be sure that a VERSION file exists in the root of the project to get the correct
 This will generate a .whl for your python version in the wheelhouse directory by default. After that just do a pip install on the generated wheel.
 
 ```pip install wheel ./wheelhouse/ambassadors.openclips-0.0.1-py3-none-any.whl```
+
+To install while developing and seeing your code updated without reinstalling a standard dev install will do.
+
+```pip install --user -e ./```
 
 ## Versioning
 
