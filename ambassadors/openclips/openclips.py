@@ -1,7 +1,9 @@
-#
-# VFX Clip reader/writer etc
-#
+"""
+OpenClip Objects and Components.
+"""
+import os
 
+import reader
 
 class Clip(object):
     # constant properties as defined here:
@@ -11,27 +13,20 @@ class Clip(object):
     __TYPE = "clip"
 
     # constructor
-    def __init__(self):
+    def __init__(self, document):
         # private properties
         self._document = None
-        # self._filepath  = None # dont really need to keep track of this since we will use a xml-document.
-        self._opened = False
-        self._stream = None
-
+        
         # public properties
         self.name = ""
     # end __init__
 
-    # Opens and reads an existing clip. Also keeps it open for additional changes.
-    # The user is responsible for closing
-    def open(self, path):
-        self.name = "TestClip"
-    # end open
-
-    # Closes any existing (file)streams
-    def close(self):
+    @staticmethod
+    def from_file(path):
+        #return reade
         pass
-    # end close
+        
+    # end from_file
 # end Clip
 
 

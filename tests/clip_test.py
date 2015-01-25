@@ -1,17 +1,14 @@
-from ambassadors.openclips import openclips as am  # am stands for Ambassadors
+from ambassadors.openclips import openclips
 
 import unittest
 
-class AMClipTest(unittest.TestCase):
+class OCClipTest(unittest.TestCase):
+    
     def test_read_clip(self):
         # Instanciate a Clip instance
-        clip = am.Clip()
-        clip.open("../examples/simple.clip")
+        clip = openclips.Clip.from_file("../examples/simple.clip")
 
-        self.assertEqual("TestClip", clip.name)
-
-        clip.close()
-
-        self.assertTrue(False)
+        self.assertEqual("NoVersionNoSetup", clip.name)
     # end test_read_clip
-# end AMClipTest
+        
+# end OCClipTest
