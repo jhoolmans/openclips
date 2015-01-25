@@ -16,6 +16,11 @@ class Clip(object):
     def __init__(self):
         # public properties
         self.name = ""
+        
+        self.currentVersion = 0
+
+        self.versions = []
+        self.tracks = []
     # end __init__
 
     @staticmethod

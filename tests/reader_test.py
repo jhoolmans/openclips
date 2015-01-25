@@ -22,5 +22,39 @@ class OCReaderTest(unittest.TestCase):
         
         self.assertIsNone(clip, "Invalid clip file is None")
     # end test_reader_returns_none_when_invalid
-    
 # end OCReaderTest
+
+
+class OCReaderSimpleClipValidationTest(unittest.TestCase):
+    """
+    These tests validate the read clip file.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.clip = reader.Reader.from_file("../examples/simple.clip")
+    #end setUpClass
+    
+    def test_clip_name(self):
+        """ Tests the name of the read clip. """
+        
+        self.assertEqual(self.clip.name, "NoVersionNoSetup")
+    #end test_clip_name
+    
+    def test_versions(self):
+        """ Tests the versions of the read clip. """
+        self.assertEqual(len(self.clip.versions), 1)
+        
+        version = self.clip.versions[0]
+        self.assertIsInstance(version, openclips.Version)
+        
+        # validate version structure
+    #end test_versions
+    
+    def test_tracks(self):
+        """ Tests the tracks of the read clip. """        
+        self.assertEqual(len(self.clip.tracks), 1)
+        self.assertIsInstance(self.clip.tracks[0], openclips.Track)        
+    #end test_tracks
+
+#end OCReaderSimpleClipValidationTest

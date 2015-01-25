@@ -32,11 +32,32 @@ class Reader(object):
     # end clip
     
     def to_clip(self):
-        """ Reads the dom tree and creates a Clip object"""
+        """ 
+        Reads the dom tree and creates a Clip object 
+        """
         dom = self._dom
         
-        return openclips.Clip()
+        clip = openclips.Clip()
+        clip.versions = self.read_versions()
+        
+        return clip
     #end to_clip
+    
+    def read_versions(self):
+        """
+        Reads the versions from the DOM object.
+        """
+        root = self._dom.documentElement
+        versionsEl = root.getElementsByTagName("versions")[0]
+        
+        versions = []
+        # Loop through version elements
+        for version in versionsEl.getElementsByTagName("version"):
+            versions.append(openclips.Version())
+        
+        return versions
+    
+    #end read_versions
     
     @staticmethod
     def from_file(path):
