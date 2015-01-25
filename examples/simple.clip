@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clip type="clip" version=3>
+    <name type="string">NoVersionNoSetup</name>
+    <tracks>
+        <track uid="1b22da75-33e5-4dbe-80d0-7ed680a8b2b7">
+            <trackType>video</trackType>
+            <duration type="time">
+                <rate type="rate">
+                    <numerator>30000</numerator>
+                    <denominator>1001</denominator>
+                </rate>
+                <nbTicks>26</nbTicks>
+                <dropMode>NDF</dropMode>
+            </duration>
+            <name type="string">ClipNoVersionNoSetup</name>
+            <feeds currentVersion="0">
+                <feed vuid="0" uid="track1Feed1">
+                    <spans>
+                        <span>
+                            <duration>26</duration>
+                            <path>/var/tmp/UltimateFlick.[001-026].dpx</path>
+                        </span>
+                    </spans>
+                </feed>
+            </feeds>
+        </track>
+    </tracks>
+    <versions currentVersion="0">
+        <version uid="0">
+            <creationDate>2010/12/14 11:54:06</creationDate>
+        </version>
+    </versions>
+</clip>
