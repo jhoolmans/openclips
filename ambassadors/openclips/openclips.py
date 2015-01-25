@@ -13,18 +13,17 @@ class Clip(object):
     __TYPE = "clip"
 
     # constructor
-    def __init__(self, document):
-        # private properties
-        self._document = None
-        
+    def __init__(self):
         # public properties
         self.name = ""
     # end __init__
 
     @staticmethod
     def from_file(path):
-        #return reade
-        pass
+        """
+        Wrapper for the Reader.from_file method.
+        """
+        return reader.Reader.from_file(path)
         
     # end from_file
 # end Clip
